@@ -1,0 +1,25 @@
+nav{
+    background-color: #007BFF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    margin: -10px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    justify-content: center;
+    gap: 35px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 32px;
+    font-family:Arial;
+}
+nav p{
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    font-family:Arial;
+}
