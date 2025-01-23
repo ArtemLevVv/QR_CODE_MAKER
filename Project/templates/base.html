@@ -13,9 +13,9 @@
     <body>
         <header>
             <nav>
-                <p>Головна</p>
-                <a href="">Реєстрація</a>
-                <a href="{% url 'log' %}">Авторизація</a>
+                <a href="{% url 'home' %}">Головна</a>
+                <a href="{% url 'register' %}">Реєстрація</a>
+                <a href="{% url 'login' %}">Авторизація</a>
             </nav>
         </header>
         <main>
@@ -24,7 +24,35 @@
             {% endblock %}
         </main>
         <footer>
+            <div class="footer">
+                <div class="about_us">
+                    <p>
+                        ПРО НАС:
+                    </p>
+                    <p>
+                        Ми надаємо послуги у створенню QR-кодів
+                    </p>
+                </div>
 
+                <div class="contacts">
+                    <p>
+                        email: QRCODEMAKER@gmail.com
+                    </p>
+                    <p>
+                        Телефон: +380-00-000-0000
+                    </p>
+                    <p>
+                        Адреса: м. Київ, Україна
+                    </p>
+                </div>
+
+                <div class="social">
+                    <p>Слідкуйте за нами:</p>
+                    <a href="https://x.com/?mx=2">X</a>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

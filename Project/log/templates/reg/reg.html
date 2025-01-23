@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    LOGIN PAGE
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'reg/css/reg.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <input type="text" placeholder="Введіть Логін" class="name">
+        <input type="text" placeholder="Введіть Електрону почту" class="email">
+        <input type="pasword" placeholder="Введіть Пароль" class="password">
+        <input type="pasword" placeholder="Повторіть Введений паролт" class="p_password">
+
+        <div class="text">
+            <p>Якщо не маєте акаунт ось</p>
+            <a href="{% url 'login' %}">Авторизація</a>
+        </div>
+        
+        <button>Підтвердити</button>
+    </div>
+{% endblock %}
