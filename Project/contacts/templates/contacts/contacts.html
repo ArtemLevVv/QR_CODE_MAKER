@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Контакти{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'contacts/css/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contacts-section">
+    <h1>Контакти</h1>
+    <div class="contacts-container">
+        <div class="contact-card">
+            <p>Email: QRCodeMaker@gmail.com</p>
+            <p>Телефон: +380-00-000-0000</p>
+            <p>Адреса: м. Київ, Україна</p>
+        </div>
+        <div class="contact-card">
+            <p>Слідкуйте за нами:</p>
+            <p><a href="#"> </a> <a href="#">Facebook</a> <a href="#">Instagram</a></p>
+        </div>
+        <div class="contact-card"></div>
+    </div>
+</section>
+{% endblock %}
