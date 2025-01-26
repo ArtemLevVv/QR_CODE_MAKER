@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    My QR-code
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'qr_code/css/ger.cs' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main"> 
+        <div class="img">
+            <img src="{% static 'my_qr/images/OIP.jpg' %}" alt="foto">
+            <img src="{% static 'my_qr/images/OIP (1).jpg' %}" alt="foto">
+            <img src="{% static 'my_qr/images/OIF.jpg' %}" alt="foto">
+        </div>
+        <div class="button">
+            <button>Відкрити</button>
+            <button>Відкрити</button>
+            <button>Відкрити</button>
+        </div>       
+    </div>
+{% endblock %}
