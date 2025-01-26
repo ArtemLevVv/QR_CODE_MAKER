@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    GENERATION QR CODE
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'ger/css/ger.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <div class="inputs">
+            <div class="input1">
+                <input type="link" placeholder="Введіть посилання" class="link">
+            </div>
+            <div class="input1">
+                <input type="color" placeholder="#000000" class="color">
+            </div>
+            <div class="input1">
+                <input type="scrol" placeholder="-" class="scrol">
+            </div>
+            <div class="input1">
+                <input type="color_choose" placeholder="-" class="color_choose">
+            </div>
+        </div>
+        <img src="{% static 'ger/images/OIP.jpg' %}" alt="foto">
+            
+        
+        <button>Згенерувати qr code</button>
+    </div>
+{% endblock %}

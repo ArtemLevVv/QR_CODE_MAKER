@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'log',
+    'qr_code',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,8 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR / 'templates',
             BASE_DIR / 'home' / 'templates',
-            BASE_DIR / 'log' / 'templates'
+            BASE_DIR / 'log' / 'templates',
+            BASE_DIR / 'qr_code' / 'templates',
 
             
         ],
@@ -127,7 +129,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
     BASE_DIR / 'home' / 'static',
-    BASE_DIR / 'log' / 'static'
+    BASE_DIR / 'log' / 'static',
+    BASE_DIR / 'qr_code' / 'static',
 ]
 
 # Default primary key field type
