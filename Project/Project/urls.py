@@ -22,4 +22,5 @@ urlpatterns = [
     path('auth/', include('log.urls')),    
     path('', include('home.urls')),
     path('QR/', include('qr_code.urls')),
+    path('contacts/', include('contacts.urls'))
 ]

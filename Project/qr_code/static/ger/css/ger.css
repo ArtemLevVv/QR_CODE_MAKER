@@ -1,8 +1,8 @@
 .main{
     background-color:#B4B7BA ;
     display: flex;
-    width: 1430px ;
-    height: 800px;
+    width: 1330px ;
+    height: 700px;
     border: #1E1E1E solid 7px;
     border-radius: 50px ;
     flex-wrap: wrap;
@@ -13,8 +13,8 @@
 }
 .inputs{
     background-color:#1E1E1E ;
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     border: #1E1E1E solid 7px;
     border-radius: 50px;
     display: flex;
@@ -29,34 +29,34 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 475px;
-    height: 75px;
+    width: 450px;
+    height: 60px;
     border: white solid 7px;
     border-radius: 25px;
 
 }
 
 img{
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     border: white;
-    border-radius: 50px ;
-
+    border-radius: 50px;
 }
 button{
     background-color: #00C52D;
     border: #01771C solid 7px;
     border-radius: 25px;
     width: 500px;
-    height: 60px;
+    height: 50px;
     color: white;
     font-family: arial;
-    font-size: 40;
+    font-size: 30;
+    
 }
 input{
     background-color: #B4B7BA;
-    width: 425px;
-    height: 50px;
+    width: 400px;
+    height: 40px;
     border: #B4B7BA ;
     border-radius: 25px;
 }

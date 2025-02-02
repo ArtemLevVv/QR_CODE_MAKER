@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'log',
     'qr_code',
+    "contacts",
 ]
 
 MIDDLEWARE = [
