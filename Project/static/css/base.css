@@ -1,3 +1,23 @@
+h1, h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav{
     background-color: #007BFF;
     display: flex;
@@ -16,7 +36,6 @@ nav a{
     color: #FFFFFF;
     text-align: center;
     font-size: 36px;
-    font-family:Arial;
 }
 
 nav a:hover{
@@ -38,6 +57,7 @@ nav p{
     height: 200px;
     gap: 50px;
     border: #212529 solid 10px;
+    margin-top: 250px;
 }
 
 .footer p{
