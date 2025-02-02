@@ -6,16 +6,24 @@
 {% endblock %}
 
 {% block link %}
-    <link rel="stylesheet" href="{% static 'qr_code/css/ger.cs' %}">
+    <link rel="stylesheet" href="{% static 'my_qr/css/my_qr.css' %}">
 {% endblock %}
 
 {% block content %}
     <div class="main"> 
         <div class="img">
-            <img src="{% static 'my_qr/images/OIP.jpg' %}" alt="foto">
-            <img src="{% static 'my_qr/images/OIP (1).jpg' %}" alt="foto">
-            <img src="{% static 'my_qr/images/OIF.jpg' %}" alt="foto">
+            <div class="img1">
+                <img src="{% static 'my_qr/images/OIP.jpg' %}" alt="foto">
+            </div>
+            <div class="img1">
+                <img src="{% static 'my_qr/images/OIP.jpg' %}" alt="foto">
+            </div>
+            <div class="img1">
+                <img src="{% static 'my_qr/images/OIP.jpg' %}" alt="foto">
+            </div>
         </div>
+
+
         <div class="button">
             <button>Відкрити</button>
             <button>Відкрити</button>
