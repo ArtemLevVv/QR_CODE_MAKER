@@ -1,0 +1,59 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% block link %}
+
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="{% url 'home' %}">Головна</a>
+                <a href="{% url 'register' %}">Реєстрація</a>
+                <a href="{% url 'login' %}">Авторизація</a>
+                <a href="{% url 'contacts' %}">Контакти</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="about_us">
+                    <p>
+                        ПРО НАС:
+                    </p>
+                    <p>
+                        Ми надаємо послуги у створенню QR-кодів
+                    </p>
+                </div>
+
+                <div class="contacts">
+                    <p>
+                        email: QRCODEMAKER@gmail.com
+                    </p>
+                    <p>
+                        Телефон: +380-00-000-0000
+                    </p>
+                    <p>
+                        Адреса: м. Київ, Україна
+                    </p>
+                </div>
+
+                <div class="social">
+                    <p>Слідкуйте за нами:</p>
+                    <a href="https://x.com/?mx=2">X</a>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

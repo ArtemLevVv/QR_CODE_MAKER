@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    HOME PAGE
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Підписки</h1>
+    <div class="main">
+        <div class="con">
+            <div class="head">
+                <h2>Базова Підписка</h2>
+            </div>
+            <p>
+                - 1 QR-код на 6-ть місяців
+            </p>
+        </div>
+        
+        <div class="con">
+            <div class="head">
+                <h2>Продвинута Підписка</h2>
+            </div>
+            <p>
+                - 10 QR-код на 6-ть місяців
+            </p>    
+            <p>
+                - кастомізація
+            </p>
+        </div>
+        <div class="con">
+            <div class="head">
+                <h2>Преміум Підписка</h2>
+            </div>
+            <p>
+                - 100 QR-код на 6-ть місяців
+            </p>   
+            <p>
+                - кастомізація
+            </p>
+        </div>
+        <button>Отримати</button>
+        <button>Придбати 2$</button>
+        <button>Придбати 10$</button>
+    </div>
+{% endblock %}
