@@ -9,14 +9,15 @@ body {
     width: 60%;
     margin: 50px auto;
     background-color: #d3d3d3;
-    padding: 40px 20px;
+    padding: 50px 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-height: 500px;
 }
 
 .contacts-section h1 {
-    font-size: 26px;
+    font-size: 28px;
     color: #333;
     margin-bottom: 30px;
     font-weight: bold;
@@ -26,52 +27,46 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 40px;
 }
 
 .contact-card {
-    width: 180px;
-    height: 250px;
+    width: 220px;
+    height: 370px;
     background-color: #187bff;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .contact-card p {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     color: #fff;
-    margin: 10px 0;
+    margin: 12px 0;
     line-height: 1.4;
     word-wrap: break-word;
-    text-align: center;
 }
 
 .contact-card a {
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .contact-card a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .contacts-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-card {
-        width: 100%;
-        max-width: 300px;
-    }
 }

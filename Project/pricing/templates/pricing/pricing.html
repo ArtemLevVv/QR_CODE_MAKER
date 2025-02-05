@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Керування Підписками {% endblock %}
+
+{% block link %}
+    <link rel = "stylesheet" href = "{% static 'pricing/pricing.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class = "container">
+    <h1> Керування Підписками </h1>
+    <div class = "card-container">
+        <div class = "card-block">
+            <div class = "card">
+                <div class = "subscription-info">
+                    <h3>Базова підписка</h3>
+                    <p>-1 QR CODE на 6-ть місяців</p>
+                </div>
+            </div>
+            <div class = "button-container">
+                <button class = "green-button"> Придбати за 5$ </button>
+            </div>
+        </div>
+        <div class = "card-block">
+            <div class = "card">
+                <div class = "subscription-info">
+                    <h3>Продвинута підписка</h3>
+                    <p>-35 QR CODE на 8-ть місяців</p>
+                    <p>Кастомізація</p>
+                    <p>Більше QR CODE і без реклами на сайті</p>
+                </div>
+            </div>
+            <div class = "button-container">
+                <button class = "green-button"> Придбати за 15$ </button>
+            </div>
+        </div>
+        <div class = "card-block">
+            <div class = "card">
+                <div class = "subscription-info">
+                    <h3>Преміум підписка</h3>
+                    <p>-150 QR CODE на 1 рік</p>
+                    <p>Кастомізація</p>
+                    <p>Більше QR CODE і без реклами на сайті</p>
+                    <p>Інструкції, як з ними звертатися</p>
+                </div>
+            </div>
+            <div class = "button-container">
+                <button class = "green-button"> Придбати за 25$ </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

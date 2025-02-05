@@ -1,26 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Контакти{% endblock %}
+{% block title %} Контакти {% endblock %}
 
 {% block link %}
-    <link rel="stylesheet" href="{% static 'contacts/css/styles.css' %}">
+    <link rel = "stylesheet" href = "{% static 'contacts/css/styles.css' %}">
 {% endblock %}
 
 {% block content %}
-<section class="contacts-section">
+<section class = "contacts-section">
     <h1>Контакти</h1>
-    <div class="contacts-container">
-        <div class="contact-card">
+    <div class = "contacts-container">
+        <div class = "contact-card">
             <p>Email: QRCodeMaker@gmail.com</p>
             <p>Телефон: +380-00-000-0000</p>
             <p>Адреса: м. Київ, Україна</p>
         </div>
-        <div class="contact-card">
+        <div class = "contact-card">
             <p>Слідкуйте за нами:</p>
-            <p><a href="#"> </a> <a href="#">Facebook</a> <a href="#">Instagram</a></p>
+            <p><a href = "#">Facebook</a> <a href = "#"> Instagram </a></p>
         </div>
-        <div class="contact-card"></div>
+        <div class = "contact-card">
+            <p>Це сайт для створення QR-кодів.  
+            На головній сторінці ви можете оформити підписку,  
+            зареєструватися та увійти в акаунт.  
+            У розділі "Контакти" знайдете інформацію про нас,  
+            а в "QR CODE" можна створювати QR-коди.</p>
+        </div>
     </div>
 </section>
 {% endblock %}
