@@ -40,7 +40,7 @@ button{
     width: 350px;
     height: 70px;
     color: white;
-    font-family: arial;
+    /* font-family: arial; */
     font-size: 30;
 }
 .button{
