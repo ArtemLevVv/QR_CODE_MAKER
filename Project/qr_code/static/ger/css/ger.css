@@ -1,8 +1,8 @@
 .main{
-    background-color:#B4B7BA ;
+    background-color: #B4B7BA ;
     display: flex;
-    width: 1330px ;
-    height: 700px;
+    width: 1300px ;
+    height: 880px;
     border: #1E1E1E solid 7px;
     border-radius: 50px ;
     flex-wrap: wrap;
@@ -11,7 +11,14 @@
     justify-content: center;
     gap: 75px;
 }
-.inputs{
+input{
+    background-color: black;
+    width: 700px;
+    height: 700px;
+    border-radius: 7px;
+    
+}
+/* .inputs{
     background-color:#1E1E1E ;
     width: 500px;
     height: 500px;
@@ -23,8 +30,8 @@
     align-items: center;
     justify-content: center;
     gap: 25px;
-}
-.input1{
+} */
+/* .input1{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -34,7 +41,7 @@
     border: white solid 7px;
     border-radius: 25px;
 
-}
+} */
 
 img{
     width: 500px;
@@ -42,17 +49,22 @@ img{
     border: white;
     border-radius: 50px;
 }
-button{
+.main button{
     background-color: #00C52D;
     border: #01771C solid 7px;
     border-radius: 25px;
     width: 500px;
     height: 50px;
     color: white;
-    /* font-family: arial; */
     font-size: 30;
-    
 }
+
+.main button:hover{
+    background-color: #01771C;
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
 input{
     background-color: #B4B7BA;
     width: 400px;

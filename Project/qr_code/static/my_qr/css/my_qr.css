@@ -10,6 +10,7 @@
     margin: auto;
     justify-content: center;
     gap: 75px;
+    
 }
 .img{
     display: flex;
@@ -18,12 +19,12 @@
     width: -17px;
     margin-top: 50px ;
 }
-.img1{
+.con{
     background-color: #007BFF;
     height: 300px;
     width: 300px;
     justify-content: center;
-    border: #007BFF 7px solid;
+    border: white solid;
     border-radius: 50px;
 }
 img{
@@ -33,17 +34,22 @@ img{
     border-radius: 25px;
     margin: 17px;
 }
-button{
+.main button{
     background-color: #00C52D;
     border: #01771C solid 7px;
     border-radius: 25px;
-    width: 350px;
+    width: 300px;
     height: 70px;
     color: white;
-    /* font-family: arial; */
     font-size: 30;
+    margin: 0 45px 0 45px;
 }
 .button{
     padding: 75px;
     gap: 30;
+}
+.main button:hover{
+    background-color: #01771C;
+    transform: scale(1.1); 
+    transition: 0.3s;
 }

@@ -11,20 +11,34 @@
         {% endblock %}
     </head>
     <body>
+        <script src="{% static 'js/script.js' %}" defer></script>
         <header>
-            <nav>
+            <nav class="navigation">
                 <a href="{% url 'home' %}">Головна</a>
-                <a href="{% url 'register' %}">Реєстрація</a>
-                <a href="{% url 'login' %}">Авторизація</a>
                 <a href="{% url 'ger' %}">Генерація QR-кодів</a>
                 <a href="{% url 'my_qr' %}">Мої QR-коди</a>
+                <a href="{% url 'pricing' %}">Підписки</a>                
                 <a href="{% url 'contacts' %}"> Контакти </a>
-                <a href="{% url 'pricing' %}"> Керування Підписками </a>
+                {% if user.is_authenticated %}
+                    <form method= 'post' action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit">Вийти</button>
+                    </form>
+                    <p>{{ user.username }}</p>
+                {% else %}
+                    <a href="{% url 'register' %}">Реєстрація</a>
+                    <a href="{% url 'login' %}">Авторизація</a>
+                {% endif %}
             </nav>
         </header>
         <main>
-            {% block content %}
 
+            <div class="left-menu">
+                <button class="change-button"> > </button>
+            </div>
+
+            {% block content %}
+                
             {% endblock %}
         </main>
         <footer>

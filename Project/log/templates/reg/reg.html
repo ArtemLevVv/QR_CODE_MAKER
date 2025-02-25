@@ -8,20 +8,23 @@
 {% block link %}
     <link rel="stylesheet" href="{% static 'reg/css/reg.css' %}">
 {% endblock %}
+        <!-- <input type="text" placeholder="Введіть Логін"             class="name">
+        <input type="text" placeholder="Введіть Електрону Почту"        class="email">
+        <input type="password" placeholder="Введіть Пароль"             class="password">
+        <input type="password" placeholder="Повторіть Введений Пароль"  class="p_password"> -->
 
 {% block content %}
     <h1>Реєстрація</h1>
     <div class="main">
-        <input type="text" placeholder="Введіть Логін" class="name">
-        <input type="text" placeholder="Введіть Електрону Почту" class="email">
-        <input type="pasword" placeholder="Введіть Пароль" class="password">
-        <input type="pasword" placeholder="Повторіть Введений Пароль" class="p_password">
+        <form method="post" enctype="application/x-www-form-urlencoded">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="text">
+                <p>Якщо не маєте акаунт ось</p>
+                <a href="{% url 'login' %}">Авторизація</a>
+            </div>
 
-        <div class="text">
-            <p>Якщо не маєте акаунт ось</p>
-            <a href="{% url 'login' %}">Авторизація</a>
-        </div>
-        
-        <button>Підтвердити</button>
+            <button class="submit-button" type="submit">Підтвердити</button>
+        </form>
     </div>
 {% endblock %}

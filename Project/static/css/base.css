@@ -1,5 +1,6 @@
 h1, h2, h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: #000000; */
 }
 
 p{
@@ -11,7 +12,7 @@ a{
 }
 
 input{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button{
@@ -22,7 +23,7 @@ nav{
     background-color: #007BFF;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 75px;
     width: 100vw;
     margin: -10px;
     padding: 0px;
@@ -31,11 +32,39 @@ nav{
     gap: 50px;
     margin-bottom: 75px;
 }
+
+nav button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #007BFF;
+    text-align: center;
+    font-size: 24px;
+    border: #007BFF solid;
+    color: #000000;
+}
+
+nav button:hover{
+    background-color:#005fc5;
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
 nav a{
     text-decoration: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
+}
+
+nav p{
+    color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    text-align: center;
+    font-size: 24px;
+}
+
+nav p:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 nav a:hover{
@@ -47,8 +76,37 @@ nav p{
     color: #000000;
     text-align: center;
     font-size: 36px;
-    font-family:Arial;
+    /* font-family:Arial; */
 }
+
+.left-menu{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    background-color: #212529;
+    border-radius: 50px;
+    margin-top: -40px;
+}
+
+.left-menu button{
+    width: 50px;
+    height: 50px;
+    /* margin: -65px 0 0 0; */
+    text-align: center;
+    font-size: 36px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: #007BFF solid;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.left-menu button:hover{
+    transform: scale(1.2); 
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
 .footer{
     margin: 75px 0 -10px -10px;
     display: flex;

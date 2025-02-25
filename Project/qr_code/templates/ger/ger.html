@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="{% static 'ger/css/ger.css' %}">
 {% endblock %}
 
-{% block content %}
-    <div class="main">
-        <div class="inputs">
+        <!-- <div class="inputs">
             <div class="input1">
                 <input type="link" placeholder="Введіть посилання" class="link">
             </div>
@@ -19,15 +17,25 @@
                 <input type="color" placeholder="#000000" class="color">
             </div>
             <div class="input1">
-                <input type="scrol" placeholder="-" class="scrol">
+                <label for="slider">Розмір: </label>
+                <input type="range" id="slider" min="0" max="10000" step="50" value="100" oninput="displayValue.value = slider.value">
+                <output id="displayValue">100</output>                
             </div>
             <div class="input1">
                 <input type="color_choose" placeholder="-" class="color_choose">
             </div>
+                <input type="range" id="slider" name="size" min="0" max="10000" step="50" value="100" oninput="displayValue.value = slider.value">
+                <output name="displayValue" id="displayValue">100</output>            
+        </div> -->
+        {% block content %}
+        <div class="main">
+            <form method="post">
+                {% csrf_token %}    
+                {{ form.as_p }}
+                
+                <button type="submit">Згенерувати qr code</button>
+            </form>
+            <img src="{% static 'ger/images/OIP.jpg' %}" alt="foto">
         </div>
-        <img src="{% static 'ger/images/OIP.jpg' %}" alt="foto">
-            
-        
-        <button>Згенерувати qr code</button>
-    </div>
-{% endblock %}
+    {% endblock %}
+    
